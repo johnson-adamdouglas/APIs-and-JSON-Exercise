@@ -10,12 +10,17 @@ namespace APIsAndJSON
         {
             for (int i = 0; i < 5; i++)
             {
-
                 RonVSKanyeAPI.kanyeQuote();
                 Console.WriteLine();
                 RonVSKanyeAPI.ronQuote();
                 Console.WriteLine();
             }
+
+            OpenWeatherMapAPI.CurrentWeather();
         }
+        
+
+
+
     }
 }
