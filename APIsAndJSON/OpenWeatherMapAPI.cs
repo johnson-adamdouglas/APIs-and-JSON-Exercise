@@ -14,8 +14,13 @@ namespace APIsAndJSON
         public static void CurrentWeather()
         {
 
+            //Show all files in sln explorer, go to bin>debug>net6.0 right click, add item, json configuration file and name it appsettings.json
+
+
             //to get the api key from the appsettings file
+            //Get all text in the file
             string key = System.IO.File.ReadAllText("appsettings.json");
+            //Parse the key
             string APIkey = JObject.Parse(key).GetValue("DefaultKey").ToString();
 
 
